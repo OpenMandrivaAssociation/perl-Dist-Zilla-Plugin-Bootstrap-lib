@@ -52,3 +52,14 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Sat Apr 16 2011 Funda Wang <fwang@mandriva.org> 0.10.0.30-2mdv2011.0
++ Revision: 653565
+- rebuild for updated spec-helper
+
+* Tue Aug 24 2010 Jérôme Quelin <jquelin@mandriva.org> 0.10.0.30-1mdv2011.0
++ Revision: 572815
+- import perl-Dist-Zilla-Plugin-Bootstrap-lib
+
