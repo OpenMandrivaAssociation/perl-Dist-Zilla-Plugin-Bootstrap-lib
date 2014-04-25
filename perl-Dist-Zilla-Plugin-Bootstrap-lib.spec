@@ -1,11 +1,12 @@
 %define upstream_name    Dist-Zilla-Plugin-Bootstrap-lib
-%define upstream_version 0.01000003
+%define upstream_version 0.04000002
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    1
 
 Summary:    A minimal boot-strapping for Dist::Zilla Plug-ins
+
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -20,7 +21,6 @@ BuildRequires: perl(Module::Build)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build)
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module does the very simple task of injecting the distributions 'lib'
@@ -39,27 +39,16 @@ plug-ins you're writing for Dist::Zilla, to release the plug-in itself.
 ./Build test
 
 %install
-rm -rf %buildroot
 ./Build install destdir=%{buildroot}
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes LICENSE META.json META.yml README
 %{_mandir}/man3/*
-%perl_vendorlib/*
+%{perl_vendorlib}/*
 
 
 
 
-%changelog
-* Sat Apr 16 2011 Funda Wang <fwang@mandriva.org> 0.10.0.30-2mdv2011.0
-+ Revision: 653565
-- rebuild for updated spec-helper
-
-* Tue Aug 24 2010 Jérôme Quelin <jquelin@mandriva.org> 0.10.0.30-1mdv2011.0
-+ Revision: 572815
-- import perl-Dist-Zilla-Plugin-Bootstrap-lib
 

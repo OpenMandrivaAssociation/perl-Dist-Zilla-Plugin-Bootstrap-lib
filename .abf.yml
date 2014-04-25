@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-Plugin-Bootstrap-lib-0.01000003.tar.gz: cc5f0c3a49ae32bd3c51cc10aeeb4b95e7d38273
 sources:
-  "Dist-Zilla-Plugin-Bootstrap-lib-0.01000003.tar.gz": cc5f0c3a49ae32bd3c51cc10aeeb4b95e7d38273
+  Dist-Zilla-Plugin-Bootstrap-lib-0.04000002.tar.gz: 76ea0bf67d095194555ca3e08cce75a862258f18
