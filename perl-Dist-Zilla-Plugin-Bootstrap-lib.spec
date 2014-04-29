@@ -20,6 +20,7 @@ BuildRequires: perl(File::Temp)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build)
+BuildRequires: perl(JSON::PP)
 BuildArch: noarch
 
 %description
@@ -47,8 +48,3 @@ plug-ins you're writing for Dist::Zilla, to release the plug-in itself.
 %doc Changes LICENSE META.json META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-
-
-
