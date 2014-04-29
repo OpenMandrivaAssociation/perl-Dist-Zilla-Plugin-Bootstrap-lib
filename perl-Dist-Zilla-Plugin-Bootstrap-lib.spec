@@ -21,6 +21,7 @@ BuildRequires: perl(Module::Build)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(JSON::PP)
+BuildRequires: perl(Path::FindDev)
 BuildArch: noarch
 
 %description
