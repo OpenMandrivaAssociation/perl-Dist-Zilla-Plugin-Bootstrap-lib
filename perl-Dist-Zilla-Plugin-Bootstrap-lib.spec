@@ -1,15 +1,15 @@
 %define upstream_name    Dist-Zilla-Plugin-Bootstrap-lib
-%define upstream_version 0.01000003
+%define upstream_version 1.001002
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    A minimal boot-strapping for Dist::Zilla Plug-ins
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/kentnl/Dist-Zilla-Plugin-Bootstrap-lib
+Source0:    https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Dist-Zilla-Plugin-Bootstrap-lib-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(English)
