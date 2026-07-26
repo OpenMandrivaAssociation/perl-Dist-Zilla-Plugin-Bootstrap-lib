@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-Bootstrap-lib
-%define upstream_version 1.001002
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    1.001002
+Release:    2
 
 Summary:    A minimal boot-strapping for Dist::Zilla Plug-ins
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/kentnl/Dist-Zilla-Plugin-Bootstrap-lib
-Source0:    https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Dist-Zilla-Plugin-Bootstrap-lib-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Dist-Zilla-Plugin-Bootstrap-lib-%{version}.tar.gz
 
 BuildRequires: perl(Carp)
 BuildRequires: perl(English)
@@ -28,7 +26,7 @@ directory into @INC at the point of its inclusion, so that you can use
 plug-ins you're writing for Dist::Zilla, to release the plug-in itself.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
