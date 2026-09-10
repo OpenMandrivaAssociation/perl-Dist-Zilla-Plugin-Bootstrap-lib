@@ -1,7 +1,7 @@
 %define upstream_name    Dist-Zilla-Plugin-Bootstrap-lib
 Name:       perl-%{upstream_name}
-Version:    1.001002
-Release:    2
+Version:	1.001002
+Release:    1
 
 Summary:    A minimal boot-strapping for Dist::Zilla Plug-ins
 License:    GPL+ or Artistic
