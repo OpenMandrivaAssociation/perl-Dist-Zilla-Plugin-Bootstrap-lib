@@ -29,7 +29,7 @@ plug-ins you're writing for Dist::Zilla, to release the plug-in itself.
 %setup -q -n %{upstream_name}-%{version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 
 ./Build
 
